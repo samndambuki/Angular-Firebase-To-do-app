@@ -19,7 +19,7 @@ export class AppComponent {
     });
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.refreshNotes();
   }
 

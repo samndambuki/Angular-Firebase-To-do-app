@@ -9,19 +9,17 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { SharedService } from './shared.service';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBWDJy5QFu9DCUamTZIIfIvZx_G4sEwP94",
-  authDomain: "to-do-app-f3cc8.firebaseapp.com",
-  projectId: "to-do-app-f3cc8",
-  storageBucket: "to-do-app-f3cc8.appspot.com",
-  messagingSenderId: "792139399593",
-  appId: "1:792139399593:web:d9873397f455bbfe84c4b8",
-  measurementId: "G-0F0NQ95FZX"
+  apiKey: 'AIzaSyBWDJy5QFu9DCUamTZIIfIvZx_G4sEwP94',
+  authDomain: 'to-do-app-f3cc8.firebaseapp.com',
+  projectId: 'to-do-app-f3cc8',
+  storageBucket: 'to-do-app-f3cc8.appspot.com',
+  messagingSenderId: '792139399593',
+  appId: '1:792139399593:web:d9873397f455bbfe84c4b8',
+  measurementId: 'G-0F0NQ95FZX',
 };
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,6 +27,6 @@ const firebaseConfig = {
     provideFirestore(() => getFirestore()),
   ],
   providers: [SharedService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
